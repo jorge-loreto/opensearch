@@ -1,5 +1,3 @@
-FROM opensearchproject/opensearch:2.12.0
-
-
-
-EXPOSE 9200 9600
+FROM public.ecr.aws/zinclabs/zincsearch:latest
+EXPOSE 4080
+CMD ["./zinc"]
