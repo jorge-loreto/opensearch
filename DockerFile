@@ -1,0 +1,8 @@
+FROM opensearchproject/opensearch:2.12.0
+
+ENV discovery.type=single-node
+ENV bootstrap.memory_lock=true
+ENV OPENSEARCH_JAVA_OPTS="-Xms512m -Xmx512m"
+ENV OPENSEARCH_INITIAL_ADMIN_PASSWORD=Jabro@1324
+
+EXPOSE 9200
